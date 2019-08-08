@@ -28,7 +28,7 @@ namespace GlobalLogic_Test
             {
                 String sPath = folderDialog.SelectedPath;
                 DirectoryItems di = new DirectoryItems(new DirectoryInfo(sPath));
-                string results = "Inpyt example: " + sPath + "\n \nOutput example: \n \n" + di.JsonToDynatree();
+                string results = "Input example: " + sPath + "\n \nOutput example: \n \n" + di.JsonToDynatree();
                 textBox.Text = results; 
             }
         }
