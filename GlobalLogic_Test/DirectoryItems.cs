@@ -18,9 +18,10 @@ namespace GlobalLogic_Test
 
             Children = new List<DirectoryItems>();
             Files = new List<FileItem>();
-
+            
             foreach (FileSystemInfo f in (fsi as DirectoryInfo).GetFileSystemInfos())
             {
+                
                 if (f.Attributes == FileAttributes.Directory)
                     Children.Add(new DirectoryItems(f));
                 else

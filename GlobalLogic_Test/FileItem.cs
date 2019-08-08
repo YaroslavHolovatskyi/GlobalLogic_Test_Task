@@ -10,8 +10,9 @@ namespace GlobalLogic_Test
 
         public FileItem(FileSystemInfo fsi)
         {
+            FileInfo fi = new FileInfo(fsi.FullName);
             Name = fsi.Name;
-            //Size = fsi.
+            Size = fi.Length;
             Path = fsi.FullName;
         }
     }
